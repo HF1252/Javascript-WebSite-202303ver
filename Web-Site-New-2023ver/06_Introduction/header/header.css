@@ -1,0 +1,24 @@
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(63 115 184);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        padding-top: 32px;
+    }
+}
+
+h1 {
+    font-family: serif;
+}

@@ -1,0 +1,12 @@
+.copy-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .copy-content {
+        margin-top: 7%;
+    }
+}

@@ -1,0 +1,25 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    margin-top: -185px;
+}
+
+@media screen and (max-width: 1023px) {
+    .slider {
+        margin-top: -160px;
+    }
+}
+
+.slider-img {
+    width: 800px;
+    height: 450px;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 1023px) {
+    .slider-img {
+        width: 100%;
+        height: 300px;
+        margin-top: 170px;
+    }
+}

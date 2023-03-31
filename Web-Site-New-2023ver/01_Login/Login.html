@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="./CSS/header.css" />
+        <link rel="stylesheet" href="./CSS/main.css" />
+        <link rel="stylesheet" href="./CSS/footer.css" />
+    </head>
+    <body>
+        <div class="Login-center-box">
+            <header>
+                <!-- タイトル -->
+                <h1>Login</h1>
+            </header>
+            <main>
+                <div id="error"></div>
+                <form
+                    id="form"
+                    action="../03_HomePage/HomePage.html"
+                    method="GET"
+                >
+                    <!-- 入力フォーム（ユーザ名）　-->
+                    <input
+                        id="username"
+                        type="text"
+                        name="username"
+                        placeholder="UserName"
+                        required
+                    />
+                    <!-- 入力フォーム（ユーザID）-->
+                    <input
+                        id="userId"
+                        type="text"
+                        name="userId"
+                        placeholder="UserID"
+                        required
+                    />
+                    <!-- 入力フォーム（メールアドレス）-->
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                    <!-- 入力フォーム（パスワード）-->
+                    <input
+                        id="password"
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        required
+                    />
+                    <!-- 入力フォーム（確認用パスワード）-->
+                    <input
+                        id="password"
+                        type="password"
+                        name="confirmedPassword"
+                        placeholder="ConfirmedPassword"
+                        required
+                    />
+                    <!-- ログインボタン -->
+                    <div class="Login-button">
+                        <input type="submit" value="Login" />
+                    </div>
+                </form>
+                <script defer src="./JS/script.js"></script>
+            </main>
+            <footer>
+                <!-- パスワード忘れた方用リンク -->
+                <div>
+                    <a href="../02_Forgot-Login/ForgotLogin.html" class="link">
+                        Forgot Password & ID
+                    </a>
+                </div>
+                <!-- 著作権マーク -->
+                <div>
+                    <small class="copy">&copy; 2023 H.F</small>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

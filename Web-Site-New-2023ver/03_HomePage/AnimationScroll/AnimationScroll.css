@@ -1,0 +1,107 @@
+.animation-scroll {
+    height: 100%;
+    width: 100%;
+    background-image: url('./Img/09983E79-DE6A-4DAB-A9F5-BA6FDF5782E2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.animation-scroll::after {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 100%;
+    left: 0;
+    opacity: 0.5;
+}
+
+.subtitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: 3.5rem;
+    color: white;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+.subtitle.active {
+    opacity: 1;
+    transition: all 3s;
+}
+
+.img-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+    .img-container {
+        height: 100vh;
+    }
+}
+
+.img-wrap {
+    position: relative;
+    top: 40%;
+    height: 50%;
+    width: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.img-wrap.active {
+    width: 60vh;
+    opacity: 1;
+    transition: opacity 1s, width 2s;
+}
+
+.img {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 60vh;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.6);
+}
+
+.img-wrap.subtitle.active > .img {
+    transform: scale(1);
+    transition: 1s ease-out;
+}
+
+.comment {
+    position: absolute;
+    font-size: 2.3rem;
+    color: #c7d8e1;
+    top: 70%;
+    z-index: 2;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 1023px) {
+    .comment {
+        font-size: 2.1rem;
+        top: 41%;
+    }
+}
+
+.comment.active {
+    opacity: 1;
+    transition: opacity 3s;
+}

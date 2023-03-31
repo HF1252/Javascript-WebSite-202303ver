@@ -1,0 +1,23 @@
+.icon {
+    font-size: 32px;
+    padding-bottom: 24px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .icon {
+        font-size: 23px;
+    }
+}
+
+.icon__link {
+    color: white;
+    text-decoration: none;
+    padding-right: 0.5%;
+}
+
+@media screen and (max-width: 1024px) {
+    .icon__link {
+        padding-right: 0;
+    }
+}

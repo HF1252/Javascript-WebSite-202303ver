@@ -1,0 +1,14 @@
+.introduction-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 43%;
+    font-family: unset;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1023px) {
+    .introduction-container {
+        margin-top: 40%;
+        font-size: 16px;
+    }
+}

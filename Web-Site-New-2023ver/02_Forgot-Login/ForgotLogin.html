@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forgot Login</title>
+        <link rel="stylesheet" href="./CSS/header.css" />
+        <link rel="stylesheet" href="./CSS/main.css" />
+        <link rel="stylesheet" href="./CSS/footer.css" />
+        <link rel="stylesheet" href="./Modal/CSS/modal.css" />
+    </head>
+    <body>
+        <header>
+            <!-- タイトル -->
+            <h1>Forgot Login</h1>
+        </header>
+        <main>
+            <form>
+                <!-- 入力フォーム（ユーザID）-->
+                <input type="id" name="id" placeholder="UserID" />
+                <!-- 入力フォーム（パスワード）-->
+                <input type="password" name="password" placeholder="Password" />
+                <!-- 入力フォーム（確認用パスワード）-->
+                <input
+                    type="password"
+                    name="confirmedPassword"
+                    placeholder="ConfirmedPassword"
+                />
+            </form>
+            <!-- モーダル画面 -->
+            <div class="main">
+                <button id="modalOpen">OK</button>
+                <div id="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>ModalWindow</h1>
+                            <span class="modalClose">&times;</span>
+                        </div>
+                        <div class="modal-main">
+                            <p>
+                                Do you really
+                                <br />
+                                want to change
+                                <br />
+                                Password & ID ?
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- NGボタン -->
+                            <input
+                                type="button"
+                                onclick="location.href='./ForgotLogin.html'"
+                                value="NG"
+                            />
+                            <!-- OKボタン -->
+                            <input
+                                type="button"
+                                onclick="location.href='../01_Login/Login.html'"
+                                value="OK"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./Modal/JS/script.js"></script>
+        </main>
+        <footer>
+            <!-- 著作権マーク -->
+            <div>
+                <small class="copy">&copy; 2023 H.F</small>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.animation-scroll {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../Img/PC.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.animation-scroll::after {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 350vh;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    top: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+.title.active {
+    opacity: 1;
+    transition: all 3s;
+}
+
+.comment-container {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.comment {
+    position: absolute;
+    font-size: 3.5rem;
+    color: #7bd6e6;
+    top: 40%;
+    z-index: 2;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+@media screen and (max-width: 1023px) {
+    .comment {
+        font-size: 1.5rem;
+        top: 41%;
+    }
+}
+
+.comment.active {
+    opacity: 1;
+    transition: opacity 3s;
+}

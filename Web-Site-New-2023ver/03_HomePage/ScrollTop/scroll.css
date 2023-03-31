@@ -1,0 +1,15 @@
+.go-top-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border: 3px solid #333;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}

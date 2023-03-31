@@ -1,0 +1,14 @@
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+input[type='id'],
+input[type='password'] {
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 250px;
+    height: 40px;
+}

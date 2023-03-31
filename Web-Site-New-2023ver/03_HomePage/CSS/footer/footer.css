@@ -1,0 +1,17 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 95%;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer-container {
+        width: 82%;
+    }
+}
+
+.copy-content {
+    margin-top: 5px;
+    width: 100%;
+}
